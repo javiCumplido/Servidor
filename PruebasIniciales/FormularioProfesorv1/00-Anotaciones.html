@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forumulario</title>
+</head>
+<body>
+<!-- 
+  value => valor que se va a enviar por el metodo a la pagina que hemos indicado.  -> valor predeterminado -> Uso: proceso modificación.
+  placeholder => valor predeterminado pero cuando escribo desaparece.
+-->
+  <form action="#" method="post">
+    <label for="texto">Texto: </label>
+    <input type="text" name="texto" id="texto" /> <!-- name -> variables que se mandan a la pagina destino. id -> nombre que utiliza para javascript en el DOM -->
+    <select name="asignatura" id="asignatura">
+      <option value="Base de datos">Base de datos</option>
+      <option value="Programacion">Programacion</option>
+      <option value="Servirdor">Servirdor</option>
+    </select>
+    <br/>
+    <input type="checkbox" name="BD" id="BD" />
+    <label for="BD">Base de Datos</label>
+    <br/>
+    <input type="checkbox" name="PRO" id="PRO" />
+    <label for="PRO">Programacion</label>
+    <br/>
+    <input type="checkbox" name="SV" id="SV" />
+    <label for="SV">Servidor</label>
+  </form>
+</body>
+</html>

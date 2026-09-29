@@ -27,14 +27,14 @@ $colores = [
 
 function buscarAsignatura(array $horario, array $colores)
 {
-  for ($i = 0; $i < count($horario); $i++) {
-    echo '<tr>';
-    echo '<td style="text-align: center;">' . ($i + 1) . '</td>';
-    foreach ($horario[$i] as $asignaturas) {
-      echo '<td style="background-color: ' . $colores[$asignaturas] . '">' . $asignaturas . '</td>';
+    for ($i = 0; $i < count($horario); $i++) {
+        echo '<tr>';
+        echo '<td style="text-align: center;">' . ($i + 1) . '</td>';
+        foreach ($horario[$i] as $asignaturas) {
+            echo '<td style="background-color: ' . $colores[$asignaturas] . '">' . $asignaturas . '</td>';
+        }
+        echo '</tr>';
     }
-    echo '</tr>';
-  }
 }
 
 ?>

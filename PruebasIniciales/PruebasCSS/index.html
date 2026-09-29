@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PruebasCSS - box-sizing</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      span {
+        border: 1px solid black;
+      }
+      span:nth-of-type(n + 4) {
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+      }
+      div:nth-of-type(-n + 3) {
+        border: 1px solid black;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+      }
+      div:nth-of-type(n + 4) {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <span>elemento1</span>
+    <span>elemento2 linea width</span>
+    <span>elemento3 linea sin width</span>
+    <span>elemento1</span>
+    <span>elemento2 linea width</span>
+    <span>elemento3 linea con width</span>
+    <div>elemento1 bloque con width estable</div>
+    <div>elemento2 bloque con</div>
+    <div>elemento3 bloque</div>
+    <div>elemento1 bloque con width estable</div>
+    <div>elemento2 bloque con</div>
+    <div>elemento3 bloque</div>
+  </body>
+</html>

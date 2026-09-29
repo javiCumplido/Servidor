@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <form action="./mostrarPost.php" method="post">
+      <label for="asignatura">Asignatura: </label>
+      <select name="asignatura" id="asignatura">
+        <option value="BBDD">Base de Datos</option>
+        <option value="EEDD">Entorno de Desarrollo</option>
+        <option value="PROG">Programacion</option>
+        <option value="SSINF">Sistemas Informaticos</option>
+        <option value="LMSG">Lenguaje de Marcas</option>
+        <option value="INGP">Ingles Profesional</option>
+        <option value="IPE1">Itinerario Personal para Empleabilidad 1</option>
+        <option value="TUTO">Tutoria</option>
+      </select>
+      <br />
+      <label for="profesores">Profesores: </label>
+      <select name="profesores" id="profesores">
+        <option value="IMD">Isabel Muñoz Dominguez</option>
+        <option value="FGR">Francisco Garcia Ramirez</option>
+        <option value="ADL">Alberto Dominguez Lebrato</option>
+        <option value="SVA">Santiago Vazquez Aguilar</option>
+        <option value="JMAG">Jose Maria Aguirio Gomez</option>
+      </select>
+      <br />
+      <!-- 
+      checkbox => si no lo marcas esta en false y no manda en post o get, y si se marca lo manda con valor 'on' 
+      -->
+      <input type="checkbox" name="semana" value="lunes" id="lunes" /><label
+        for="lunes"
+      >
+        Lunes</label
+      >
+      <input type="checkbox" name="semana" id="martes" value="martes" /><label
+        for="martes"
+        >Martes</label
+      >
+      <input
+        type="checkbox"
+        name="semana"
+        id="miercoles"
+        value="miercoles"
+      /><label for="miercoles">Miercoles</label>
+      <input type="checkbox" name="semana" id="jueves" value="jueves" /><label
+        for="jueves"
+        >Jueves</label
+      ><input
+        type="checkbox"
+        name="semana"
+        id="viernes"
+        value="viernes"
+      /><label for="viernes">Viernes</label>
+      <!-- <input type="checkbox" name="semana[]" value="lunes" id="lunes" /><label
+        for="lunes"
+      >
+        Lunes</label
+      >
+      <input type="checkbox" name="semana[]" id="martes" value="martes" /><label
+        for="martes"
+        >Martes</label
+      >
+      <input
+        type="checkbox"
+        name="semana[]"
+        id="miercoles"
+        value="miercoels"
+      /><label for="martes">Martes</label>
+      <input type="checkbox" name="semana[]" id="jueves" value="jueves" /><label
+        for="jueves"
+        >Jueves</label
+      ><input
+        type="checkbox"
+        name="semana[]"
+        id="viernes"
+        value="viernes"
+      /><label for="viernes">Viernes</label>
+      -->
+      <br />
+      <input type="radio" name="aceptaCondiciones" id="aceptaCondiciones"><label for="aceptaCondiciones">Acepta Condiciones</label>
+      <br />
+      <label for="horas">Horas: </label>
+      <input type="text" name="horas" id="horas" />
+      <br />
+      <label for="informacion">Informacion: </label>
+      <textarea
+        name="informacion"
+        id="informacion"
+        cols="20"
+        rows="10"
+      ></textarea>
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

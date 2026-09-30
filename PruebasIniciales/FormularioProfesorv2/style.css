@@ -1,31 +1,38 @@
-/* Por defecto box-sizing: content-box (no se declara a proposito). */
-/* Ancho total = width + padding + border. El margin va por fuera. */
-
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f6f3ee;
+  color: #4a4a4a;
 }
 
 form {
-  width: 400px;
+  width: 1300px;
   padding: 20px;
-  border: 2px solid black;
+  border: 2px solid #a8c5b5;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(74, 74, 74, 0.08);
   margin: 20px;
-  background-color: #f2f2f2;
+  background-color: #fdfbf7;
 }
 
 label {
-  border: 1px solid black;
-  margin: 5px;
+  border: 1px solid #c9b8a8;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 4px;
+  background-color: #fdf0e4;
 }
 
 select {
-  display: block;
   width: 300px;
-  padding: 5px;
-  border: 1px solid black;
-  margin: 10px 0;
-}
+  padding: 10px;
+  border: 1px solid #a8bfd0;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(74, 74, 74, 0.06);
+  margin: 10px ;
+  background-color: #e9f1f8;
+} 
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -34,29 +41,33 @@ input[type="radio"] {
   margin: 5px;
 }
 
-input[type="text"] {
-  display: block;
+ input[type="text"] {
   width: 300px;
-  height: 25px;
-  padding: 5px;
-  border: 1px solid black;
-  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #b6c9b8;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(74, 74, 74, 0.06);
+  margin: 10px ;
+  background-color: #eef4ec;
 }
 
 textarea {
-  display: block;
   width: 300px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid black;
-  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #d0b8c9;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(74, 74, 74, 0.06);
+  margin: 0;
+  background-color: #f9ecf2;
 }
 
-input[type="submit"] {
+ input[type="submit"] {
   width: 120px;
   height: 35px;
   padding: 5px;
-  border: 1px solid black;
-  margin: 10px 0;
-  background-color: #cfe0ff;
-}
+  border: 1px solid #a8bfd0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(74, 74, 74, 0.08);
+  margin: 10px ;
+  background-color: #dbe9f6;
+} 
